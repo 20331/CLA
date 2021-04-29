@@ -1,0 +1,34 @@
+body {
+  margin: 0; 
+  padding: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  font-family: "Arial","Microsoft","YaHei","黑體","宋體","sans-serif";
+}
+
+.wave span {
+  display: inline-block;
+  color: #8b4513;
+  font-size: 1em;
+}
+.wave .wave-icon {
+  animation: wave 1.5s ease-in-out infinite;
+  animation-delay: calc(.1s*var(--wave-item));
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-15px);
+
+  }
+  50%, 100%{
+    transform: translateY(8px);
+  }
